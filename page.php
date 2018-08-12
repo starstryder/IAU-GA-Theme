@@ -9,7 +9,7 @@
 
             <div style="max-width: 990px;">
                 <p style="margin: 0 auto;">
-                    <img src="<?php echo site_url(); ?>/wp-content/themes/IAU-GA-theme/images/IAU-NP-Header.png" style="max-height: 75px; margin: 0 auto; width: 100%; ">
+                    <img src="<?php echo site_url(); ?>/wp-content/themes/IAU-GA-Theme/images/IAU-NP-Header.png" style="max-height: 75px; margin: 0 auto; width: 100%; ">
                 </p>
             </div>
             <?php wp_nav_menu( array( 'theme_location' => 'section-menu' ) ); ?>
