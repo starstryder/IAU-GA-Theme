@@ -78,14 +78,14 @@ aside {
         text-decoration: none;
     }
 
-#sidebar #menu-item-25, #sidebar #menu-item-30 {
+#sidebar #menu-item-6, #sidebar #menu-item-30 {
     float: left;
     background: white !important;
     width: 194px;
     margin: 4px 0;
 }
 
-#sidebar #menu-item-25 a, #sidebar #menu-item-30 a {
+#sidebar #menu-item-6 a, #sidebar #menu-item-30 a {
     font-weight: bold;
     color: black !important;
     font-size: 16px;
