@@ -1,0 +1,131 @@
+body
+{
+    background-color: #cccccc;
+    margin-top: 0;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    overflow: -moz-scrollbars-vertical;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------------------------------------------------------
+   General
+------------------------------------------------------------------- */
+
+.alignright {
+    float: right;
+}
+
+.alignleft {
+    float: left;
+}
+
+/* ----------------------------------------------------------------
+   Sections
+------------------------------------------------------------------- */
+
+#header {
+    margin: 0 auto;
+    max-width: 1003px;
+    border-left: solid 1px #999999;
+    border-right: solid 1px #999999;
+}
+
+#container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1003px;
+    border-left: solid 1px #999999;
+    border-right: solid 1px #999999;
+    background: white !important;
+}
+
+#content {
+    flex-grow: 1;
+    color: #black !important;
+    font-size: 0.8em;
+    padding: 15px;
+
+}
+
+aside {
+    flex-shrink: 0;
+    width: 200px;
+    background: black;
+}
+
+#sidebar {
+}
+
+    #sidebar .menu-iau-sidebar-container ul {
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: black;
+    }
+
+    #sidebar .menu-iau-sidebar-container ul li {
+        float: left;
+        width: 194px;
+        padding: 4px 0px 4px 6px;
+    }
+
+    #sidebar .menu-iau-sidebar-container ul li a {
+        font-weight: bold;
+        color: #b1b1b1 !important;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+#sidebar #menu-item-25, #sidebar #menu-item-30 {
+    float: left;
+    background: white !important;
+    width: 194px;
+    margin: 4px 0;
+}
+
+#sidebar #menu-item-25 a, #sidebar #menu-item-30 a {
+    font-weight: bold;
+    color: black !important;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#footer {
+    background-color: #999999;
+    font-size: 0.7em;
+    padding: 5px 10px;
+    width: 984px;
+    margin: 0 auto;
+}
+
+#footer-links p {
+    color: #DDDDDD;
+    margin: 0 0 5px 200px;
+    padding: 0;
+}
+
+#footer-links p a {
+    color: white;
+}
+
+
+/* ----------------------------------------------------------------
+   Mobile
+------------------------------------------------------------------- */
+/* @media all and (max-width: 800px) {
+
+    #page {
+        flex-flow:column;
+    }
+
+    /* Make the sidebar take the entire width of the screen */
+/*
+    aside {
+        width:auto;
+    }
+
+}
+
+*/
