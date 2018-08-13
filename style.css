@@ -61,6 +61,8 @@ body
 
 #container .menu-section-container ul li a {
     text-decoration: none;
+    font-size: 90%;
+    color: #999999;
 }
 
 #post {
