@@ -166,14 +166,26 @@ aside {
    Homepage Specific
 ------------------------------------------------------------------- */
 
-#content #post .IAU {
-    width: 25%;
+#content #post .home-excerpt {
+    margin-bottom: 15px;
     float: left;
+    width: 200px;
 }
 
-#content #post .home-FM-excerpt {
-    margin-bottom: 15px;
+#content #post .around {
+    width: 25%;
+    float: left;
+    margin-right: 2em;
 }
+
+#content #post .highlights {
+    width: 425px;
+    float: left;
+    max-height: 500px;
+    margin-right: 2em;
+}
+
+
 
 /* ----------------------------------------------------------------
    Mobile

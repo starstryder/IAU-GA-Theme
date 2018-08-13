@@ -8,16 +8,56 @@
 
         <div id="post">
 
-            <div class="IAU">
+            <!---- Sections: Around IAU ------------------------------------------------>
+            <div class="Around">
                 <h1>Around IAU</h1>
                 <?php
-                $get_AroundIAU = new WP_Query( 'category_slug=IAU&posts_per_page=4' );
+                $get_AroundIAU = new WP_Query( 'category_name=IAU&posts_per_page=4' );
 
                 while ( $get_AroundIAU->have_posts() ) : $get_AroundIAU->the_post(); ?>
-                    <div class="home-FM-excerpt"> <?php
+                    <div class="home-excerpt"> <?php
                         the_title('<h3>', '</h3>' );
                         the_excerpt(); ?>
                     </div> <?php
+                endwhile;
+                ?>
+
+                <h1>Around Vienna</h1>
+                <?php
+                $get_AroundVienna = new WP_Query( 'category_name=vienna&posts_per_page=4' );
+
+                while ( $get_AroundVienna->have_posts() ) : $get_AroundVienna->the_post(); ?>
+                    <div class="home-excerpt"> <?php
+                        the_title('<h3>', '</h3>' );
+                        the_excerpt(); ?>
+                    </div> <?php
+                endwhile;
+                ?>
+            </div>
+
+            <!---- Sections: Highlights ------------------------------------------------>
+            <div class="Highlights">
+                <h1>Highlights</h1>
+                <?php
+                $get_AroundIAU = new WP_Query( 'category_name=featured&posts_per_page=4' );
+
+                $i = 0;
+                while ( $get_AroundIAU->have_posts() ) : $get_AroundIAU->the_post();
+                    $i = 0;
+
+                    if ( has_post_thumbnail() && $i == 0 ) {
+                        ?> <div class="home-excerpt"> <?php
+                            the_post_thumbnail($size= 'thumbnail' );
+                            $i++;
+                            the_title('<h3>', '</h3>' );
+                            the_excerpt();
+                            ?> </div> <?php
+                        } else {
+                        ?> <div class="home-excerpt"> <?php
+                            the_title('<h3>', '</h3>' );
+                            the_excerpt();
+                            ?> </div> <?php
+                        }
                 endwhile;
                 ?>
             </div>
