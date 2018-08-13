@@ -1,3 +1,7 @@
+
+</section>
+
+
 <div id="footer">
     <div style="float: right;">
 
