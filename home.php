@@ -15,7 +15,7 @@
 
                 while ( $get_AroundIAU->have_posts() ) : $get_AroundIAU->the_post(); ?>
                     <div class="home-FM-excerpt"> <?php
-                        the_title('<h2>', '</h2>' );
+                        the_title('<h3>', '</h3>' );
                         the_excerpt(); ?>
                     </div> <?php
                 endwhile;
