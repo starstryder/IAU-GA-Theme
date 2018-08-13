@@ -1,7 +1,6 @@
 body
 {
     background-color: #cccccc;
-    margin-top: 0;
     font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
     overflow: -moz-scrollbars-vertical;
     margin: 0;
@@ -12,12 +11,28 @@ body
    General
 ------------------------------------------------------------------- */
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .alignright {
     float: right;
 }
 
 .alignleft {
     float: left;
+}
+
+H1 {
+    color: rgb(200, 48, 24);
+    font-size: 0.9em;
+    text-align: right;
+}
+
+H2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2em;
 }
 
 /* ----------------------------------------------------------------
@@ -72,7 +87,7 @@ body
 
 #content {
     flex-grow: 1;
-    color: #black !important;
+    color: black !important;
     font-size: 0.8em;
     padding: 15px;
 
@@ -98,7 +113,7 @@ aside {
     #sidebar .menu-iau-sidebar-container ul li {
         float: left;
         width: 194px;
-        padding: 4px 0px 4px 6px;
+        padding: 4px 0 4px 6px;
     }
 
     #sidebar .menu-iau-sidebar-container ul li a {
@@ -140,6 +155,18 @@ aside {
     color: white;
 }
 
+/* ----------------------------------------------------------------
+   Homepage Specific
+------------------------------------------------------------------- */
+
+#content #post .IAU {
+    width: 20%;
+    float: left;
+}
+
+#content #post .home-FM-excerpt {
+    margin-bottom: 10px;
+}
 
 /* ----------------------------------------------------------------
    Mobile
