@@ -151,6 +151,7 @@ li {
     font-weight: bold;
     text-align: left;
     list-style-type: none;
+    margin: 0;
 }
 
 #post .post-meta ul li {
