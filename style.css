@@ -24,11 +24,16 @@ body
     float: left;
 }
 
+p {
+    margin-bottom: 10px;
+    line-height: 1.5em;
+}
+
 H1 {
     color: rgb(200, 48, 24);
     font-size: 0.9em;
     text-align: left;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 H2 {
@@ -39,6 +44,21 @@ H2 {
 H3 {
     font-family: "Times New Roman", Times, serif;
     font-size: 1.2em;
+}
+
+ul {
+    margin-bottom: 10px;
+}
+
+li {
+    margin-left: 2em;
+    margin-bottom: 5px;
+}
+
+.wp-caption-text {
+    font-size: 0.9em;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -92,12 +112,73 @@ H3 {
     padding: 10px;
 }
 
+#post H2 {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+#post img {
+    margin: 0 10px 10px 10px;
+    border: 1px solid #999999;
+}
+
+#post table {
+    font-size:1em;
+    width: 60%;
+    float: right;
+    border: 1px solid #999999;
+    margin: 10px 0 10px 20px;
+}
+
+#post .col-1 {
+    width: 20%;
+}
+
+#post table tr td {
+    font-size:1em;
+    padding: 5px;
+    border: 1px solid #999999;
+
+}
+
+#post .post-meta ul {
+    color: rgb(200, 48, 24);
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: left;
+    margin: 0 0 10px 0;
+    list-style-type: none;
+}
+
+#post .post-meta ul li {
+    margin: 0;
+}
+
 #content {
     flex-grow: 1;
     color: black !important;
     font-size: 0.8em;
     padding: 15px;
 
+}
+
+#bio {
+    border-top: 1px solid #999999;
+    font-size: small;
+    font-style: italic;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#bio img {
+    border: 1px solid #999999;
+    margin: 10px 0 0 10px;
+    height: 75px;
+    width: 75px;
+}
+
+#bio img {
+    margin: 0 10px 10px 0;
 }
 
 aside {

@@ -39,22 +39,21 @@
             <div class="Highlights">
                 <h1>Highlights</h1>
                 <?php
-                $get_AroundIAU = new WP_Query( 'category_name=featured&posts_per_page=4' );
+                $get_featured = new WP_Query( 'category_name=featured&posts_per_page=4' );
 
                 $i = 0;
-                while ( $get_AroundIAU->have_posts() ) : $get_AroundIAU->the_post();
-                    $i = 0;
+                while ( $get_featured->have_posts() ) : $get_featured;
 
                     if ( has_post_thumbnail() && $i == 0 ) {
                         ?> <div class="home-excerpt"> <?php
                             the_post_thumbnail($size= 'thumbnail' );
                             $i++;
-                            the_title('<h3>', '</h3>' );
+                            the_title('<h2>', '</h2>' );
                             the_excerpt();
                             ?> </div> <?php
                         } else {
                         ?> <div class="home-excerpt"> <?php
-                            the_title('<h3>', '</h3>' );
+                            the_title('<h2>', '</h2>' );
                             the_excerpt();
                             ?> </div> <?php
                         }
