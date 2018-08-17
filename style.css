@@ -141,7 +141,7 @@ li {
 
 }
 
-#post .post-meta ul {
+.post-meta li {
     color: rgb(200, 48, 24);
     font-size: 0.9em;
     font-weight: bold;
