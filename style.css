@@ -141,12 +141,15 @@ li {
 
 }
 
+.post-meta ul {
+    margin: 0 0 10px 0;
+}
+
 .post-meta li {
     color: rgb(200, 48, 24);
     font-size: 0.9em;
     font-weight: bold;
     text-align: left;
-    margin: 0 0 10px 0;
     list-style-type: none;
 }
 
