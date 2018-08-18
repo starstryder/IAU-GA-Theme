@@ -1,5 +1,5 @@
 <?php /**
- * Template Name: Archive - IAU
+ * Template Name: Archive - Vienna
  *
  * @package WordPress
  */ ?>
