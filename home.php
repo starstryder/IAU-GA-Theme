@@ -69,6 +69,9 @@
                     -->
                 </a><div id="awcc1534122270664" class="aw-widget-current"  data-locationkey="31868" data-unit="c" data-language="en-us" data-useip="false" data-uid="awcc1534122270664"></div><script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>        </div>
             </div>
+            <div id="photos">
+                Photos Here
+            </div>
 
         </div>
 <?php get_footer(); ?>
