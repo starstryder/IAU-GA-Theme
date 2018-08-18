@@ -24,6 +24,11 @@ body
     float: left;
 }
 
+a {
+    color: #006699;
+    text-decoration: none;
+}
+
 p {
     margin-bottom: 10px;
     line-height: 1.5em;
