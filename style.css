@@ -73,10 +73,15 @@ blockquote {
     border-width: 2px 0;
     border-style: solid;
     border-color: #eee;
-    padding: 1.5em 0 0.5em;
+    padding: 1.5em 2em 0.5em 2em;
     margin: 1.5em 0;
     position: relative;
 
+}
+
+blockquote p {
+    margin: 0;
+    font-style: italic;
 }
 blockquote:before {
     content: '\201C';
