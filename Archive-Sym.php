@@ -10,12 +10,10 @@
 
     <div id="post">
         <?php the_post(); ?>
-        <h2 class="entry-title"><?php the_title(); ?> Archive</h2>
+        <h2 class="entry-title" style="margin-bottom: 20px"><?php the_title(); ?> Archive</h2>
 
-
-        <H3>Archives by Day</H3>
         <ul>
-            <?php wp_get_archives('type=daily', cat='4'); ?>
+            <?php wp_get_archives('type=alpha', 'cat=8'); ?>
         </ul>
 
     </div>
