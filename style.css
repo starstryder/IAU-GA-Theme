@@ -322,6 +322,7 @@ aside {
     margin-right: 3em;
 }
 
+
 #content #post .highlights {
     width: 425px;
     float: left;
@@ -333,6 +334,10 @@ aside {
     margin: 0 1em 15px 0;
     float: left;
     width: 190px;
+}
+
+#content #post .home-excerpt h3 {
+    font-size: 1.4em;
 }
 
 #content #post .FM-bar {
