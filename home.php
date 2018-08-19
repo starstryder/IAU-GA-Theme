@@ -38,15 +38,7 @@
             <!---- Sections: Highlights ------------------------------------------------>
             <div class="Highlights">
                 <h1>Highlights</h1>
-                <?php
-                $get_AroundVienna = new WP_Query( 'category_name=vienna&posts_per_page=4' );
 
-                while ( $get_AroundVienna->have_posts() ) : $get_AroundVienna->the_post(); ?>
-                    <div class="home-excerpt"> <?php
-                        the_title('<h3>', '</h3>' );
-                        the_excerpt(); ?>
-                    </div> <?php
-                ?>
             </div>
 
 
