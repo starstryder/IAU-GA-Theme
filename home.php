@@ -43,7 +43,7 @@
 
 
             <!---- Sections: Right side ------------------------------------------------>
-            <div id="right-sidebar" style="float:right">
+            <div id="right-sidebar" style="float:right; max-width:90px;">
                 <div class="weather" style="float:right;">
                     <a href="https://www.accuweather.com/en/at/vienna/31868/weather-forecast/31868" class="aw-widget-legal">
                         <!--
