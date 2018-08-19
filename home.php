@@ -58,9 +58,9 @@
                 <div style="clear: both;"></div>
                 <h1>Focus Meetings</h1>
                 <?php
-                $get_featured = new WP_Query( 'category_name=-featured' );
+                $get_fm = new WP_Query( 'category_name=-fm,cat=-9' );
 
-                while ( $get_featured->have_posts() ) : $get_featured->the_post(); ?>
+                while ( $get_fm->have_posts() ) : $get_fm->the_post(); ?>
                     <div class="home-excerpt">
                         <a href="<?php the_permalink(); ?>">
                             <?php if (has_post_thumbnail( $post->ID ) ): ?>
