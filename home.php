@@ -61,7 +61,7 @@
             <div class="FM-bar">
                 <h1>Focus Meetings</h1>
                 <?php
-                $get_fm = new WP_Query( 'category_name=fm' );
+                $get_fm = new WP_Query( 'category_name=fm,-featured' );
 
                 while ( $get_fm->have_posts() ) : $get_fm->the_post(); ?>
                     <div class="home-excerpt">
