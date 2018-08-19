@@ -15,8 +15,10 @@
                 $get_AroundIAU = new WP_Query( 'category_name=IAU&posts_per_page=3' );
 
                 while ( $get_AroundIAU->have_posts() ) : $get_AroundIAU->the_post(); ?>
-                    <div class="home-excerpt"> <?php
-                        the_title('<h3>', '</h3>' );
+                    <div class="home-excerpt">
+                        <a href="<?php the_permalink(); ?>"><?php
+                            the_title('<h3>', '</h3>' );?>
+                        </a>
                         the_excerpt(); ?>
                     </div> <?php
                 endwhile;
@@ -27,8 +29,10 @@
                 $get_AroundVienna = new WP_Query( 'category_name=vienna&posts_per_page=3' );
 
                 while ( $get_AroundVienna->have_posts() ) : $get_AroundVienna->the_post(); ?>
-                    <div class="home-excerpt"> <?php
-                        the_title('<h3>', '</h3>' );
+                    <div class="home-excerpt">
+                        <a href="<?php the_permalink(); ?>"><?php
+                            the_title('<h3>', '</h3>' );?>
+                        </a>
                         the_excerpt(); ?>
                     </div> <?php
                 endwhile;
@@ -87,7 +91,7 @@
                     <?php
                     $get_sym = new WP_Query( 'cat=4,-9' );
 
-                    while ( $get_sym->have_posts() ) : $getsym->the_post(); ?>
+                    while ( $get_sym->have_posts() ) : $get_sym->the_post(); ?>
                         <div class="home-excerpt">
                             <a href="<?php the_permalink(); ?>">
                                 <?php if (has_post_thumbnail( $post->ID ) ): ?>
