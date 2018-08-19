@@ -336,7 +336,7 @@ aside {
 }
 
 #content #post .FM-bar {
-    width: 425px;
+    width: 540px;
     float: left;
     max-height: 500px;
     margin-right: 1em;
@@ -345,7 +345,14 @@ aside {
 #content #post .FM-bar .home-excerpt {
     margin: 0 1em 15px 0;
     float: left;
-    width: 135px;
+    width: 540px;
+}
+
+#content #post .FM-bar .home-excerpt img {
+    max-height: 90px;
+    margin-right: 10px;
+    padding: 0;
+    float: left
 }
 
 
