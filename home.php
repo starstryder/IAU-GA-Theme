@@ -116,7 +116,7 @@
                 </div>
 
                 <!---- Sections: Symposia    ------------------------------------------------>
-                <div style="clear: both;"></div>
+
                 <div class="FM-bar">
                     <h1>Symposia</h1>
                     <?php
@@ -147,6 +147,4 @@
 
 
         </div>
-    <div style="clear: both;"></div>
-    <div style="width:100%">.</div>
 <?php get_footer(); ?>
