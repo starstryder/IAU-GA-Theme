@@ -75,7 +75,7 @@
                     $get_photos = new WP_Query( 'category_name=photo&posts_per_page=3' );
 
                     while ( $get_photos->have_posts() ) : $get_photos->the_post(); ?>
-                        <div class="home-excerpt">
+                        <div class="photo-excerpt">
                             <a href="<?php the_permalink(); ?>">
                                 <?php if (has_post_thumbnail( $post->ID ) ): ?>
                                     <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
