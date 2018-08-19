@@ -6,7 +6,7 @@
 
 <?php define( 'WP_USE_THEMES', false ); get_header(); ?>
 
-        <div id="post">
+        <div id="post" style="height: 2000px">
 
             <!---- Sections: Around IAU ------------------------------------------------>
             <div class="Around">
@@ -15,8 +15,10 @@
                 $get_AroundIAU = new WP_Query( 'category_name=IAU&posts_per_page=3' );
 
                 while ( $get_AroundIAU->have_posts() ) : $get_AroundIAU->the_post(); ?>
-                    <div class="home-excerpt"> <?php
-                        the_title('<h3>', '</h3>' );
+                    <div class="home-excerpt">
+                        <a href="<?php the_permalink(); ?>"><?php
+                            the_title('<h3>', '</h3>' );?>
+                        </a> <?php
                         the_excerpt(); ?>
                     </div> <?php
                 endwhile;
@@ -27,8 +29,10 @@
                 $get_AroundVienna = new WP_Query( 'category_name=vienna&posts_per_page=3' );
 
                 while ( $get_AroundVienna->have_posts() ) : $get_AroundVienna->the_post(); ?>
-                    <div class="home-excerpt"> <?php
-                        the_title('<h3>', '</h3>' );
+                    <div class="home-excerpt">
+                        <a href="<?php the_permalink(); ?>"><?php
+                            the_title('<h3>', '</h3>' );?>
+                        </a> <?php
                         the_excerpt(); ?>
                     </div> <?php
                 endwhile;
