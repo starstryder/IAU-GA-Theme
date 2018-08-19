@@ -7,7 +7,9 @@
 <body>
 
 <div id="header">
-    <img src="<?php echo site_url(); ?>/wp-content/themes/IAU-GA-Theme/images/banner_IAUGA_s.jpg">
+    <a href="http://astronomy2018.cosmoquest.org/newspaper/">
+        <img src="<?php echo site_url(); ?>/wp-content/themes/IAU-GA-Theme/images/banner_IAUGA_s.jpg">
+    </a>
 </div>
 
 <section id="container">
