@@ -58,7 +58,12 @@
             </div>
 
             <!---- Sections: Focus Meetings ------------------------------------------------>
-
+            <div class="FM-bar">
+                <h1>Focus Meetings - Coming Soon</h1>
+            </div>
+            <div class="Sym">
+                <h1>Symposia</h1>
+            </div>
 
 
 
