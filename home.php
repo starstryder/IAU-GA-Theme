@@ -59,7 +59,7 @@
                     </div> <?php
                 endwhile;
                 ?>
-                <div style="clear: both;"></div>
+
 
 
                 <!---- Sections: Focus Meetings ------------------------------------------------>
