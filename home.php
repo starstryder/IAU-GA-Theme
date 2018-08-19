@@ -140,10 +140,11 @@
 
             </div>
 
-            <div style="clear: both;"></div>
+
 
 
              </div>
+    <div style="clear: both;"></div>
 
         </div>
 <?php get_footer(); ?>
