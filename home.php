@@ -59,7 +59,7 @@
 
 
 
-            <!---- Sections: Right side ------------------------------------------------>
+            <!---- Sections: Weatehr ------------------------------------------------>
             <div id="right-sidebar" style="float:right; max-width:90px;">
                 <div class="weather" style="float:right;">
                     <a href="https://www.accuweather.com/en/at/vienna/31868/weather-forecast/31868" class="aw-widget-legal">
@@ -70,7 +70,10 @@
                     <div id="awcc1534122270664" class="aw-widget-current"  data-locationkey="31868" data-unit="c" data-language="en-us" data-useip="false" data-uid="awcc1534122270664"></div>
                     <script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
                 </div>
+
+                <!---- Sections: Weather ------------------------------------------------>
                 <div id="photos" style="float:right;">
+                    <h1>Photo Stories</h1>
                     <?php
                     $get_photos = new WP_Query( 'category_name=photo&posts_per_page=3' );
 
