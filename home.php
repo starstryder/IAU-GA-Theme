@@ -38,11 +38,11 @@
             <!---- Sections: Highlights ------------------------------------------------>
             <div class="Highlights">
                 <h1>Highlights</h1>
-                <?php
-                $get_featured = new WP_Query( 'category_name=featured&posts_per_page=4' );
+                <?php /*
+                $get_featured = new WP_Query( 'category_name=featured&posts_per_page=1' );
 
                 $i = 0;
-                while ( $get_featured->have_posts() ) : $get_featured;
+               while ( $get_featured->have_posts() ) : $get_featured;
 
                     if ( has_post_thumbnail() && $i == 0 ) {
                         ?> <div class="home-excerpt"> <?php
@@ -57,7 +57,7 @@
                             the_excerpt();
                             ?> </div> <?php
                         }
-                endwhile;
+                endwhile; */
                 ?>
             </div>
 

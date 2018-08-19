@@ -126,7 +126,7 @@ blockquote:after {
 }
 
 #container .news-banner {
-    max-height: 75px;
+    max-height: 90px;
     margin: 0 auto;
     width: 100%;
     padding-bottom: 15px;
@@ -164,6 +164,7 @@ blockquote:after {
 #post img {
     margin: 0 10px 10px 10px;
     border: 1px solid #999999;
+    max-width: 100%;
 }
 
 #post table {
