@@ -56,7 +56,7 @@
                 endwhile;
                 ?>
             </div>
-            <div style="clear:both"></div>
+
 
 
             <!---- Sections: Right side ------------------------------------------------>
