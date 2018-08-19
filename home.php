@@ -43,11 +43,12 @@
 
                 while ( $get_featured->have_posts() ) : $get_featured->the_post(); ?>
                     <div class="home-excerpt">
+                        <a href="<?php the_permalink(); ?>">
                         <?php if (has_post_thumbnail( $post->ID ) ): ?>
                             <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-                            <p style="text-align: center; width:100%;"><img src="<?php echo $image[0]; ?>" style="max-width:190px;max-height: 100px; margin:0; padding: 0;text-align: center;"></p>
+                            <p><img src="<?php echo $image[0]; ?>" style="max-width:190px; margin:0; padding: 0;"></p>
                         <?php endif; ?>
-                        <a href="<?php the_permalink(); ?>">
+
                             <?php the_title('<h3>', '</h3>' ); ?>
                         </a>
                         <?php the_excerpt(); ?>
@@ -55,6 +56,7 @@
                 endwhile;
                 ?>
             </div>
+            <div style="clear:both"></div>
 
 
             <!---- Sections: Right side ------------------------------------------------>
@@ -69,7 +71,23 @@
                     <script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
                 </div>
                 <div id="photos" style="float:right;">
-                    Photos Here
+                    <?php
+                    $get_photos = new WP_Query( 'category_name=photo&posts_per_page=3' );
+
+                    while ( $get_photos->have_posts() ) : $get_photos->the_post(); ?>
+                        <div class="home-excerpt">
+                            <a href="<?php the_permalink(); ?>">
+                                <?php if (has_post_thumbnail( $post->ID ) ): ?>
+                                    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+                                    <img src="<?php echo $image[0]; ?>" style="max-width:90px; margin:0; padding: 0;"></p>
+                                <?php endif; ?>
+
+                                <?php the_title('<span style="font-size: small">', '</span>' ); ?>
+                            </a>
+                        </div> <?php
+                    endwhile;
+                    ?>
+                </div>
                 </div>
              </div>
 
