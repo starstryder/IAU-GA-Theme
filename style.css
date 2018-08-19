@@ -355,6 +355,11 @@ aside {
     float: left
 }
 
+#content #post .FM-bar .home-excerpt p {
+    margin: 0;
+    padding: 0;
+}
+
 
 
 /* ----------------------------------------------------------------
