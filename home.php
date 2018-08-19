@@ -15,10 +15,8 @@
                 $get_AroundIAU = new WP_Query( 'category_name=IAU&posts_per_page=3' );
 
                 while ( $get_AroundIAU->have_posts() ) : $get_AroundIAU->the_post(); ?>
-                    <div class="home-excerpt">
-                        <a href="<?php the_permalink(); ?>"><?php
-                            the_title('<h3>', '</h3>' );?>
-                        </a>
+                    <div class="home-excerpt"> <?php
+                        the_title('<h3>', '</h3>' );
                         the_excerpt(); ?>
                     </div> <?php
                 endwhile;
@@ -29,10 +27,8 @@
                 $get_AroundVienna = new WP_Query( 'category_name=vienna&posts_per_page=3' );
 
                 while ( $get_AroundVienna->have_posts() ) : $get_AroundVienna->the_post(); ?>
-                    <div class="home-excerpt">
-                        <a href="<?php the_permalink(); ?>"><?php
-                            the_title('<h3>', '</h3>' );?>
-                        </a>
+                    <div class="home-excerpt"> <?php
+                        the_title('<h3>', '</h3>' );
                         the_excerpt(); ?>
                     </div> <?php
                 endwhile;
@@ -59,7 +55,7 @@
                     </div> <?php
                 endwhile;
                 ?>
-
+                <div style="clear: both;"></div>
 
 
                 <!---- Sections: Focus Meetings ------------------------------------------------>
