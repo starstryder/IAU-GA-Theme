@@ -300,7 +300,7 @@ aside {
 ------------------------------------------------------------------- */
 
 #content #post .home-excerpt {
-    margin: 0 15px 15px 0;
+    margin: 0 1em 15px 0;
     float: left;
     width: 190px;
 }
@@ -321,7 +321,7 @@ aside {
     width: 425px;
     float: left;
     max-height: 500px;
-    margin-right: 2em;
+    margin-right: 1em;
 }
 
 
