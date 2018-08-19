@@ -38,7 +38,22 @@
             <!---- Sections: Highlights ------------------------------------------------>
             <div class="Highlights">
                 <h1>Highlights</h1>
+                <?php
+                    $get_featured = new WP_Query( 'category_name=featured' );
 
+                while ( $get_featured->have_posts() ) : $get_featured->the_post(); ?>
+                    <div class="home-excerpt">
+                        <?php if (has_post_thumbnail( $post->ID ) ): ?>
+                            <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+                           <img src="<?php echo $image[0]; ?>" style="max-width:200px;margin: 0 0 10px 0; padding: 0;">
+                        <?php endif; ?>
+                        <a href="<?php the_permalink(); ?>">
+                            <?php the_title('<h3>', '</h3>' ); ?>
+                        </a>
+                        <?php the_excerpt(); ?>
+                    </div> <?php
+                endwhile;
+                ?>
             </div>
 
 
