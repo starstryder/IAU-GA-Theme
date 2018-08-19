@@ -304,7 +304,7 @@ aside {
    Homepage Specific
 ------------------------------------------------------------------- */
 
-#content #post .home-excerpt {
+#content #post .highlights .home-excerpt {
     margin: 0 1em 15px 0;
     float: left;
     width: 190px;
@@ -329,11 +329,23 @@ aside {
     margin-right: 1em;
 }
 
+#content #post .highlights .home-excerpt {
+    margin: 0 1em 15px 0;
+    float: left;
+    width: 190px;
+}
+
 #content #post .FM-bar {
     width: 425px;
     float: left;
     max-height: 500px;
     margin-right: 1em;
+}
+
+#content #post .FM-bar .home-excerpt {
+    margin: 0 1em 15px 0;
+    float: left;
+    width: 135px;
 }
 
 
