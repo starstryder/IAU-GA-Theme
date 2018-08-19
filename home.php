@@ -135,7 +135,7 @@
                                     <img src="<?php echo $image[0]; ?>" style="max-width:90px; margin:0; padding: 0;">
                                 <?php endif; ?>
 
-                                <?php the_title('<span style="font-size: small">', '</span>' ); ?>
+                                <?php the_title('<span style="font-size: 0.9em">', '</span>' ); ?>
                             </a>
                         </div> <?php
                     endwhile;
