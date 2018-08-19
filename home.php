@@ -12,7 +12,7 @@
             <div class="Around">
                 <h1>Around IAU</h1>
                 <?php
-                $get_AroundIAU = new WP_Query( 'category_name=IAU&posts_per_page=4' );
+                $get_AroundIAU = new WP_Query( 'category_name=IAU&posts_per_page=3' );
 
                 while ( $get_AroundIAU->have_posts() ) : $get_AroundIAU->the_post(); ?>
                     <div class="home-excerpt"> <?php
@@ -24,7 +24,7 @@
 
                 <h1>Around Vienna</h1>
                 <?php
-                $get_AroundVienna = new WP_Query( 'category_name=vienna&posts_per_page=4' );
+                $get_AroundVienna = new WP_Query( 'category_name=vienna&posts_per_page=3' );
 
                 while ( $get_AroundVienna->have_posts() ) : $get_AroundVienna->the_post(); ?>
                     <div class="home-excerpt"> <?php
@@ -45,7 +45,7 @@
                     <div class="home-excerpt">
                         <?php if (has_post_thumbnail( $post->ID ) ): ?>
                             <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-                           <img src="<?php echo $image[0]; ?>" style="max-width:190px;margin: 0 0 10px 0; padding: 0;">
+                            <p style="text-align: center; width:100%;"><img src="<?php echo $image[0]; ?>" style="max-width:190px;max-height: 100px; margin:0; padding: 0;text-align: center;"></p>
                         <?php endif; ?>
                         <a href="<?php the_permalink(); ?>">
                             <?php the_title('<h3>', '</h3>' ); ?>
