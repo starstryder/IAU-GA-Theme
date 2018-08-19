@@ -35,6 +35,7 @@
                 ?>
             </div>
 
+        <div style="float:left">
             <!---- Sections: Highlights ------------------------------------------------>
             <div class="Highlights">
                 <h1>Highlights</h1>
@@ -60,27 +61,11 @@
             <!---- Sections: Focus Meetings ------------------------------------------------>
             <div class="FM-bar">
                 <h1>Focus Meetings</h1>
-                <?php
-                $get_fm = new WP_Query( 'category_name=fm' );
 
-                while ( $get_fm->have_posts() ) : $get_fm->the_post(); ?>
-                    <div class="home-excerpt">
-                        <a href="<?php the_permalink(); ?>">
-                            <?php if (has_post_thumbnail( $post->ID ) ): ?>
-                                <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-                                <p><img src="<?php echo $image[0]; ?>" style="max-width:190px; margin:0; padding: 0;"></p>
-                            <?php endif; ?>
-
-                            <?php the_title('<h3>', '</h3>' ); ?>
-                        </a>
-                        <?php the_excerpt(); ?>
-                    </div> <?php
-                endwhile;
-                ?>
             </div>
 
 
-
+</div>
 
 
             <!---- Sections: Weatehr ------------------------------------------------>
