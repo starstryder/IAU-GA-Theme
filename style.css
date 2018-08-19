@@ -319,10 +319,17 @@ aside {
 #content #post .around {
     width: 25%;
     float: left;
-    margin-right: 2em;
+    margin-right: 3em;
 }
 
 #content #post .highlights {
+    width: 425px;
+    float: left;
+    max-height: 500px;
+    margin-right: 1em;
+}
+
+#content #post .FM-bar {
     width: 425px;
     float: left;
     max-height: 500px;
