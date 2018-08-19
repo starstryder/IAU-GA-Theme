@@ -33,7 +33,7 @@ a {
 
 p {
     margin-bottom: 15px;
-    line-height: 1.8em;
+    line-height: 1.6em;
 }
 
 H1 {
@@ -60,6 +60,7 @@ ul {
 li {
     margin-left: 2em;
     margin-bottom: 5px;
+    line-height: 1.6em;
 }
 
 .wp-caption-text {

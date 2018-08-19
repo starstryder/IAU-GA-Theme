@@ -7,7 +7,7 @@
 <body>
 
 <div id="header">
-    <a href="http://astronomy2018.cosmoquest.org/newspaper/">
+    <a href="https://astronomy2018.univie.ac.at/">
         <img src="<?php echo site_url(); ?>/wp-content/themes/IAU-GA-Theme/images/banner_IAUGA_s.jpg">
     </a>
 </div>
@@ -21,7 +21,9 @@
 
         <div style="max-width: 990px;">
             <p style="margin: 0 auto;">
+                <a href="http://astronomy2018.cosmoquest.org/newspaper/">
                 <img  class='news-banner' src="<?php echo site_url(); ?>/wp-content/themes/IAU-GA-Theme/images/IAU-NP-Header.png">
+                </a>
             </p>
 
         </div>
