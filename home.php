@@ -56,6 +56,8 @@
                 endwhile;
                 ?>
                 <div style="clear: both;"></div>
+
+                <div class="FM-bar">
                 <h1>Focus Meetings</h1>
                 <?php
                 $get_fm = new WP_Query( 'cat=5,-9' );
@@ -74,6 +76,7 @@
                     </div> <?php
                 endwhile;
                 ?>
+                </div>
 
                 <div style="clear: both;"></div>
                 <h1>Symposia</h1>
