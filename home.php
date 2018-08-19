@@ -82,7 +82,7 @@
                             <a href="<?php the_permalink(); ?>">
                                 <?php if (has_post_thumbnail( $post->ID ) ): ?>
                                     <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-                                    <img src="<?php echo $image[0]; ?>" style="max-width:90px; margin:0; padding: 0;"></p>
+                                    <img src="<?php echo $image[0]; ?>" style="max-width:90px; margin:0; padding: 0;">
                                 <?php endif; ?>
 
                                 <?php the_title('<span style="font-size: small">', '</span>' ); ?>
