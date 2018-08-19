@@ -35,6 +35,40 @@
                 ?>
             </div>
 
+            <!---- Sections: Weather ------------------------------------------------>
+            <div id="right-sidebar" style="float:right; max-width:90px;">
+                <div class="weather" style="float:right;">
+                    <a href="https://www.accuweather.com/en/at/vienna/31868/weather-forecast/31868" class="aw-widget-legal">
+                        <!--
+                        By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at https://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at https://www.accuweather.com/en/privacy.
+                        -->
+                    </a>
+                    <div id="awcc1534122270664" class="aw-widget-current"  data-locationkey="31868" data-unit="c" data-language="en-us" data-useip="false" data-uid="awcc1534122270664"></div>
+                    <script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
+                </div>
+
+                <!---- Sections: Photos ------------------------------------------------>
+                <div id="photos" style="float:right;">
+                    <h1>Photo Stories</h1>
+                    <?php
+                    $get_photos = new WP_Query( 'category_name=photo&posts_per_page=3' );
+
+                    while ( $get_photos->have_posts() ) : $get_photos->the_post(); ?>
+                        <div class="photo-excerpt">
+                            <a href="<?php the_permalink(); ?>">
+                                <?php if (has_post_thumbnail( $post->ID ) ): ?>
+                                    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+                                    <img src="<?php echo $image[0]; ?>" style="max-width:90px; margin:0; padding: 0;">
+                                <?php endif; ?>
+
+                                <?php the_title('<span style="font-size: 0.9em">', '</span>' ); ?>
+                            </a>
+                        </div> <?php
+                    endwhile;
+                    ?>
+                </div>
+            </div>
+
             <!---- Sections: Highlights ------------------------------------------------>
             <div class="Highlights">
                 <h1>Highlights</h1>
@@ -55,41 +89,6 @@
                     </div> <?php
                 endwhile;
                 ?>
-
-
-                <!---- Sections: Weatehr ------------------------------------------------>
-                <div id="right-sidebar" style="float:right; max-width:90px;">
-                    <div class="weather" style="float:right;">
-                        <a href="https://www.accuweather.com/en/at/vienna/31868/weather-forecast/31868" class="aw-widget-legal">
-                            <!--
-                            By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at https://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at https://www.accuweather.com/en/privacy.
-                            -->
-                        </a>
-                        <div id="awcc1534122270664" class="aw-widget-current"  data-locationkey="31868" data-unit="c" data-language="en-us" data-useip="false" data-uid="awcc1534122270664"></div>
-                        <script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
-                    </div>
-
-                    <!---- Sections: Weather ------------------------------------------------>
-                    <div id="photos" style="float:right;">
-                        <h1>Photo Stories</h1>
-                        <?php
-                        $get_photos = new WP_Query( 'category_name=photo&posts_per_page=3' );
-
-                        while ( $get_photos->have_posts() ) : $get_photos->the_post(); ?>
-                            <div class="photo-excerpt">
-                                <a href="<?php the_permalink(); ?>">
-                                    <?php if (has_post_thumbnail( $post->ID ) ): ?>
-                                        <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-                                        <img src="<?php echo $image[0]; ?>" style="max-width:90px; margin:0; padding: 0;">
-                                    <?php endif; ?>
-
-                                    <?php the_title('<span style="font-size: 0.9em">', '</span>' ); ?>
-                                </a>
-                            </div> <?php
-                        endwhile;
-                        ?>
-                    </div>
-                </div>
 
                 <div style="clear: both;"></div>
 
@@ -144,42 +143,6 @@
             <div style="clear: both;"></div>
 
 
-
-
-
-            <!---- Sections: Weatehr ------------------------------------------------>
-            <div id="right-sidebar" style="float:right; max-width:90px;">
-                <div class="weather" style="float:right;">
-                    <a href="https://www.accuweather.com/en/at/vienna/31868/weather-forecast/31868" class="aw-widget-legal">
-                        <!--
-                        By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at https://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at https://www.accuweather.com/en/privacy.
-                        -->
-                    </a>
-                    <div id="awcc1534122270664" class="aw-widget-current"  data-locationkey="31868" data-unit="c" data-language="en-us" data-useip="false" data-uid="awcc1534122270664"></div>
-                    <script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
-                </div>
-
-                <!---- Sections: Weather ------------------------------------------------>
-                <div id="photos" style="float:right;">
-                    <h1>Photo Stories</h1>
-                    <?php
-                    $get_photos = new WP_Query( 'category_name=photo&posts_per_page=3' );
-
-                    while ( $get_photos->have_posts() ) : $get_photos->the_post(); ?>
-                        <div class="photo-excerpt">
-                            <a href="<?php the_permalink(); ?>">
-                                <?php if (has_post_thumbnail( $post->ID ) ): ?>
-                                    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-                                    <img src="<?php echo $image[0]; ?>" style="max-width:90px; margin:0; padding: 0;">
-                                <?php endif; ?>
-
-                                <?php the_title('<span style="font-size: 0.9em">', '</span>' ); ?>
-                            </a>
-                        </div> <?php
-                    endwhile;
-                    ?>
-                </div>
-                </div>
              </div>
 
         </div>
