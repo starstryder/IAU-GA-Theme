@@ -69,7 +69,7 @@
                         <a href="<?php the_permalink(); ?>">
                             <?php if (has_post_thumbnail( $post->ID ) ): ?>
                                 <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-                                <p><img src="<?php echo $image[0]; ?>" style="max-width:135px; margin:0 1em 0 0; padding: 0;"></p>
+                                <p><img src="<?php echo $image[0]; ?>"></p>
                             <?php endif; ?>
 
                             <?php the_title('<h3>', '</h3>' ); ?>
@@ -80,6 +80,7 @@
                 ?>
                 </div>
 
+                <!---- Sections: Symposia    ------------------------------------------------>
                 <div style="clear: both;"></div>
                 <div class="FM-bar">
                     <h1>Symposia</h1>
@@ -91,7 +92,7 @@
                             <a href="<?php the_permalink(); ?>">
                                 <?php if (has_post_thumbnail( $post->ID ) ): ?>
                                     <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-                                    <p><img src="<?php echo $image[0]; ?>" style="max-width:135px; margin:0 1em 0 0; padding: 0;"></p>
+                                    <p><img src="<?php echo $image[0]; ?>"></p>
                                 <?php endif; ?>
 
                                 <?php the_title('<h3>', '</h3>' ); ?>
@@ -104,7 +105,7 @@
 
             </div>
 
-            <!---- Sections: Focus Meetings ------------------------------------------------>
+
 
 
 
@@ -132,7 +133,7 @@
                             <a href="<?php the_permalink(); ?>">
                                 <?php if (has_post_thumbnail( $post->ID ) ): ?>
                                     <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-                                    <img src="<?php echo $image[0]; ?>">
+                                    <img src="<?php echo $image[0]; ?>" style="max-width:90px; margin:0; padding: 0;">
                                 <?php endif; ?>
 
                                 <?php the_title('<span style="font-size: 0.9em">', '</span>' ); ?>
