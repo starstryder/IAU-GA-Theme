@@ -58,7 +58,7 @@
                 <div style="clear: both;"></div>
                 <h1>Focus Meetings</h1>
                 <?php
-                $get_fm = new WP_Query( 'category_name=-fm,cat=-9' );
+                $get_fm = new WP_Query( 'cat=5,-9' );
 
                 while ( $get_fm->have_posts() ) : $get_fm->the_post(); ?>
                     <div class="home-excerpt">
