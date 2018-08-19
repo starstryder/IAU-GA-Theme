@@ -57,6 +57,26 @@
                 ?>
                 <div style="clear: both;"></div>
                 <h1>Focus Meetings</h1>
+                <?php
+                $get_featured = new WP_Query( 'category_name=-featured' );
+
+                while ( $get_featured->have_posts() ) : $get_featured->the_post(); ?>
+                    <div class="home-excerpt">
+                        <a href="<?php the_permalink(); ?>">
+                            <?php if (has_post_thumbnail( $post->ID ) ): ?>
+                                <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+                                <p><img src="<?php echo $image[0]; ?>" style="max-width:190px; margin:0; padding: 0;"></p>
+                            <?php endif; ?>
+
+                            <?php the_title('<h3>', '</h3>' ); ?>
+                        </a>
+                        <?php the_excerpt(); ?>
+                    </div> <?php
+                endwhile;
+                ?>
+
+                <div style="clear: both;"></div>
+                <h1>Symposia</h1>
 
             </div>
 
