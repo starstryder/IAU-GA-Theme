@@ -153,7 +153,7 @@ blockquote:after {
 
 #post {
     border-top: 1px solid #999999;
-    padding: 10px;
+    padding: 10px 0 10px 10px;
 }
 
 #post H2 {
@@ -298,9 +298,9 @@ aside {
 ------------------------------------------------------------------- */
 
 #content #post .home-excerpt {
-    margin-bottom: 15px;
+    margin: 0 15px 15px 0;
     float: left;
-    width: 200px;
+    width: 190px;
 }
 
 #content #post .around {
