@@ -86,7 +86,7 @@
                     <?php
                     $get_sym = new WP_Query( 'cat=4,-9' );
 
-                    while ( $get_sym->have_posts() ) : $get_sym->the_post(); ?>
+                    while ( $get_sym->have_posts() ) : $getsym->the_post(); ?>
                         <div class="home-excerpt">
                             <a href="<?php the_permalink(); ?>">
                                 <?php if (has_post_thumbnail( $post->ID ) ): ?>
