@@ -148,4 +148,5 @@
 
         </div>
     <div style="clear: both;"></div>
+    <div style="width:100%">.</div>
 <?php get_footer(); ?>
