@@ -6,7 +6,7 @@
 
 <?php define( 'WP_USE_THEMES', false ); get_header(); ?>
 
-        <div id="post" style="height: 2000px">
+        <div id="post" style="height: 1700px">
 
             <!---- Sections: Around IAU ------------------------------------------------>
             <div class="Around">
