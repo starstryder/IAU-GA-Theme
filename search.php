@@ -24,7 +24,8 @@
                 $author = get_post_custom_values("written by");
                 echo "<li>written by: ". $author[0]. "</li>";
                 $when = get_post_custom_values("when");
-                echo "<li>when: ". $when[0]. " <span style='font-style: italic; font-weight: normal; font-size: 90%;'>&nbsp; &nbsp; &nbsp; check app for details.</span></li>";
+                if (strlen($when[0]) > 2)
+                    echo "<li>when: ". $when[0]. " <span style='font-style: italic; font-weight: normal; font-size: 90%;'>&nbsp; &nbsp; &nbsp; check app for details.</span></li>";
                 ?>
                 <?php
                 the_excerpt(); ?>
