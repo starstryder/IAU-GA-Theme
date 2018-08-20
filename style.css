@@ -315,7 +315,7 @@ aside {
 }
 
 #content #post .photo-excerpt {
-    margin: 0;
+    margin: 0 0 20px 0;
     float: right;
     width: 90px;
 }
