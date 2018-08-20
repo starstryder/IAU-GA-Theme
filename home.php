@@ -10,9 +10,9 @@
 
             <!---- Sections: Around IAU ------------------------------------------------>
             <div class="Around">
-                <h1>Around IAU</h1>
+                <h1>Around the GA</h1>
                 <?php
-                $get_AroundIAU = new WP_Query( 'category_name=IAU&posts_per_page=3' );
+                $get_AroundIAU = new WP_Query( 'cat=1,-9' );
 
                 while ( $get_AroundIAU->have_posts() ) : $get_AroundIAU->the_post(); ?>
                     <div class="home-excerpt">
@@ -26,7 +26,7 @@
 
                 <h1>Around Vienna</h1>
                 <?php
-                $get_AroundVienna = new WP_Query( 'category_name=vienna&posts_per_page=3' );
+                $get_AroundVienna = new WP_Query(  'cat=7,-9'  );
 
                 while ( $get_AroundVienna->have_posts() ) : $get_AroundVienna->the_post(); ?>
                     <div class="home-excerpt">
