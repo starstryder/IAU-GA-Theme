@@ -7,10 +7,10 @@
 
                <h2><?php the_title(); ?></h2>
                <?php the_meta(); ?>
-               <p><?php the_content(__('(more...)')); ?></p>
+               <?php the_content(__('(more...)')); ?>
 
            <?php endwhile; else: ?>
-               <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+               <?php _e('Sorry, no posts matched your criteria.'); ?>
            <?php endif; ?>
        </div>
    </div>
