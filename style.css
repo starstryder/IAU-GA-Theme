@@ -121,7 +121,7 @@ blockquote:after {
 #container {
     display: flex;
     margin: 0 auto;
-    max-width: 1003px;
+    width: 1003px;
     border-left: solid 1px #999999;
     border-right: solid 1px #999999;
     background: white !important;

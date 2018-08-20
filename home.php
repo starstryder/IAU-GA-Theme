@@ -77,7 +77,7 @@
             <div class="Highlights">
                 <h1>Highlights</h1>
                 <?php
-                    $get_featured = new WP_Query( 'cat=9' );
+                    $get_featured = new WP_Query('cat=5' ); // 'cat=9' );
 
                 while ( $get_featured->have_posts() ) : $get_featured->the_post(); ?>
                     <div class="home-excerpt">
