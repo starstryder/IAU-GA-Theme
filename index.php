@@ -10,7 +10,7 @@
                    $author = get_post_custom_values("written by");
                    echo "<li>written by: ". $author[0]. "</li>";
                    $when = get_post_custom_values("when");
-                   echo "<li>when: ". $when[0]. " <span style='font-style: italic; font-weight: normal; font-size: 90%;'>&nbsp; &nbsp; &nbsp; check app for details.</span></li>";
+                   echo "<li>when: ". $when[0]. " <span style='font-style: italic; font-weight: normal; font-size: 90%;'>&nbsp; &nbsp; &nbsp; check app for details</span></li>";
                    ?>
                </ul>
 
