@@ -98,7 +98,7 @@
 
 
                 <!---- Sections: Focus Meetings ------------------------------------------------>
-                <div class="FM-bar">
+                <div class="FM-bar" style="margin-bottom: 1em;">
                 <h1>Focus Meetings</h1>
                 <?php
                 $get_fm = new WP_Query( 'cat=5,-9' );
