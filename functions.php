@@ -17,3 +17,11 @@ function register_my_menus() {
 add_action( 'init', 'register_my_menus' );
 
 add_theme_support( 'post-thumbnails' );
+
+function foo_modify_query_order( $query ) {
+    if ( $query->is_category() && $query->is_main_query() ) {
+        $query->set( 'orderby', 'title' );
+        $query->set( 'order', 'ASC' );
+    }
+}
+add_action( 'pre_get_posts', 'foo_modify_query_order' );

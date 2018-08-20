@@ -30,6 +30,7 @@
                 the_excerpt(); ?>
             </div>
         </ul>
+        <div style="clear:both;"></div>
 
 
     <?php endwhile; else: ?>
