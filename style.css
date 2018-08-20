@@ -177,6 +177,8 @@ blockquote:after {
     margin: 10px 0 10px 20px;
 }
 
+
+
 #post .col-1 {
     width: 20%;
 }
@@ -188,8 +190,10 @@ blockquote:after {
 
 }
 
-.post-meta ul {
-    margin: 0 0 10px 0;
+.post-meta {
+    padding: 5px 0;
+
+
 }
 
 .post-meta li {
