@@ -1,9 +1,14 @@
 
 </section>
 
-<div id="sponsors">
-    <img src="<?php echo site_url(); ?>/wp-content/themes/IAU-GA-Theme/images/FooterAd.png" style="width:984px;">
-</div>
+<?php
+if ( is_home() || is_front_page() ) { ?>
+
+    <div id = "sponsors" >
+        <img src = "<?php echo site_url(); ?>/wp-content/themes/IAU-GA-Theme/images/FooterAd.png" style = "width:984px;" >
+    </div >
+
+<?php } ?>
 
 <div id="footer">
     <div style="float: right;">
