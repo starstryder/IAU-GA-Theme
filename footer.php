@@ -1,6 +1,9 @@
 
 </section>
 
+<div id="sponsors">
+    <img src="<?php echo site_url(); ?>/wp-content/themes/IAU-GA-Theme/images/FooterAd.png" style="width:984px;">
+</div>
 
 <div id="footer">
     <div style="float: right;">
