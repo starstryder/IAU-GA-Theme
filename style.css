@@ -385,9 +385,9 @@ aside {
 
 #gotpicts h3 {
     color: rgb(200, 48, 24);
-    font-size: 0.9em;
-    text-align: left;
+    font-size: 1em;
     margin-bottom: 10px;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
 
 #post #gotimages img, .ngg-imagebrowser img {
