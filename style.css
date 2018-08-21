@@ -391,8 +391,8 @@ aside {
 }
 
 #post #gotimages img, .ngg-imagebrowser img {
-    margin: 0;
-    padding: 0;
+    margin: 0 auto !important;
+    padding: 0 !important;
 }
 
 .ngg-imagebrowser-desc {
