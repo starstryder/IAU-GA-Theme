@@ -379,6 +379,28 @@ aside {
 }
 
 
+/* ----------------------------------------------------------------
+   Plugins
+------------------------------------------------------------------- */
+
+#gotpicts h2 {
+    color: rgb(200, 48, 24);
+    font-size: 0.9em;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.ngg-imagebrowser img {
+    margin: 0;
+    padding: 0;
+}
+
+.ngg-imagebrowser-desc {
+    padding: 0 10%;
+}
+
+
+
 
 /* ----------------------------------------------------------------
    Mobile
