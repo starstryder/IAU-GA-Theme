@@ -383,14 +383,14 @@ aside {
    Plugins
 ------------------------------------------------------------------- */
 
-#gotpicts h2 {
+#gotpicts h3 {
     color: rgb(200, 48, 24);
     font-size: 0.9em;
     text-align: left;
     margin-bottom: 10px;
 }
 
-.ngg-imagebrowser img {
+#post #gotimages img, .ngg-imagebrowser img {
     margin: 0;
     padding: 0;
 }
@@ -399,6 +399,10 @@ aside {
     padding: 0 10%;
 }
 
+
+.ngg-imagebrowser .pic {
+    background: #a9a9a9;
+}
 
 
 
