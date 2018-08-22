@@ -55,7 +55,7 @@
                 <div id="photos" style="float:right;">
                     <h1>Photo Stories</h1>
                     <?php
-                    $get_photos = new WP_Query( 'category_name=photo&posts_per_page=3' );
+                    $get_photos = new WP_Query( 'category_name=photo&posts_per_page=5' );
 
                     while ( $get_photos->have_posts() ) : $get_photos->the_post(); ?>
                         <div class="photo-excerpt">
