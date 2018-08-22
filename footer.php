@@ -16,10 +16,10 @@ if ( is_home() || is_front_page() ) { ?>
     </div>
     <div id="footer-links">
         <p>
-            <a href="astronomy2018.univie.ac.at/sitemap/">Sitemap</a> &#124;
-            <a href="astronomy2018.univie.ac.at/impressum/">Impressum</a> &#124;
+            <a href="http://astronomy2018.univie.ac.at/sitemap/">Sitemap</a> &#124;
+            <a href="http://astronomy2018.univie.ac.at/impressum/">Impressum</a> &#124;
             <a href="https://dsba.univie.ac.at/datenschutzerklaerung" target="_top">Datenschutzerklärung</a>  &#124;
-            <a href="CosmoQuest.org">Newspaper site by CosmoQuest</a><span style="float:right;"><a title="print version" href="javascript:window.print()">print version</a></span>
+            <a href="http://CosmoQuest.org">Newspaper site by CosmoQuest</a><span style="float:right;"><a title="print version" href="javascript:window.print()">print version</a></span>
         </p>
 
         <p>
