@@ -101,7 +101,7 @@
                 <div class="FM-bar" style="margin-bottom: 1em;">
                 <h1>Focus Meetings</h1>
                 <?php
-                $get_fm = new WP_Query( 'cat=5,-9' );
+                $get_fm = new WP_Query( 'cat=5,-9&posts_per_page=3' );
 
                 while ( $get_fm->have_posts() ) : $get_fm->the_post(); ?>
                     <div class="home-excerpt">
@@ -124,7 +124,7 @@
                 <div class="FM-bar">
                     <h1>Symposia</h1>
                     <?php
-                    $get_sym = new WP_Query( 'cat=4,-9' );
+                    $get_sym = new WP_Query( 'cat=4,-9&posts_per_page=3' );
 
                     while ( $get_sym->have_posts() ) : $get_sym->the_post(); ?>
                         <div class="home-excerpt">
