@@ -144,7 +144,7 @@ blockquote:after {
 #container .menu-section-container ul li {
     display: inline;
     padding: 0 5px;
-    margin-left: 0.75em;
+    margin-left: 0.5em;
 }
 
 #container .menu-section-container ul li a {
@@ -178,7 +178,6 @@ blockquote:after {
 }
 
 
-
 #post .col-1 {
     width: 20%;
 }
@@ -190,8 +189,6 @@ blockquote:after {
 
 .post-meta {
     padding: 5px 0;
-
-
 }
 
 .post-meta li {
