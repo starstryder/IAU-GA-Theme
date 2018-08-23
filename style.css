@@ -186,8 +186,6 @@ blockquote:after {
 #post table tr td {
     font-size:1em;
     padding: 5px;
-    border: 1px solid #999999;
-
 }
 
 .post-meta {
