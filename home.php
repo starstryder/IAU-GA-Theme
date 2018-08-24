@@ -6,7 +6,7 @@
 
 <?php define( 'WP_USE_THEMES', false ); get_header(); ?>
 
-        <div id="post" style="height: 2000px; width=760;">
+        <div id="post" style="height: 2100px; width=760;">
 
             <!---- Sections: Around IAU ------------------------------------------------>
             <div class="Around">
@@ -122,7 +122,7 @@
                 <!---- Sections: Symposia    ------------------------------------------------>
 
                 <div class="FM-bar">
-                    <h1>Symposia</h1>
+                    <h1>Symposia & Invited Discourses </h1>
                     <?php
                     $get_sym = new WP_Query( 'cat=4,-9&posts_per_page=3' );
 
